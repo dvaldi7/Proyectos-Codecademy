@@ -1,0 +1,21 @@
+//utilizo una constante porque su valor no varia
+const kelvin = 0;
+
+//celsius tiene 273 grados menos que kelvin
+const celsius = kelvin - 273;
+
+//guardamos la variable pero esta vez no sera constante porque cambiara mas adelante
+let fahrenheit = celsius * (9 / 5) + 32;
+
+//hay que redondear los farenheit de la ecuacion anterior
+fahrenheit = Math.floor(fahrenheit);
+
+//voy a añadir trambién la escala de Newton con su ecuacion
+let newton = celsius * (33 / 100);
+
+//hay que redondearla hacia abajo tambien
+newton = Math.floor(newton);
+
+console.log(`The temperature is ${fahrenheit} degrees in Fahrenheit.`);
+
+console.log(`The temperature is ${newton} degrees in Newton.`);
